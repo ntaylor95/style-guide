@@ -1,4 +1,167 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse pull-right" aria-expanded="false" style="height: 1px;">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
 
-<h1>H1 Title</h1>
-<alert type="success">hello</alert>
+<div class="container">
 
+  <div class="main-content">
+    <h1>H1 title</h1>
+    <h2>H2 Title</h2>
+    <p>class="main-content" Text: Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+
+    <p class="intro">class="intro" Stays big in mobile view: Household employment is complex. You can rely on us to handle it all—from HR help to payday to tax time.</p>
+
+    <p class="info">class="info" Shrinks in mobile view  We'll take care of all your employment obligations—for any household employee. Learn how HomePay can help you avoid frustration and errors—and provide caregivers with access to benefits, too. </p>
+
+
+  <div class="page-title">Buttons</div>
+
+  <button type="button" class="btn-red btn-large btn">Large Red Button</button>
+
+  <div class="page-title">Links</div>
+
+  <a href="#" class="link-white">White Link</a>
+
+  <a href="#" class="link-green">Green Link</a>
+
+  <div class="page-title">Forms</div>
+
+  <div class="form-container expand-collapse">
+    <div class="form-group has-error">
+<span class="help-block">
+</span>
+    </div>
+    <form name="homePayLiteMemberForm" id="homePayLiteMemberForm" method="post" action="/visitor/captureHomePayLiteEnrollment.do" autocomplete="off" class="homepay-enrollment-form">
+      <input type="hidden" name="enrolledFrom" value="">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" maxlength="25" value="" id="firstName" class="form-control">
+      </div>
+      <div class="form-group has-error">
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" maxlength="35" value="" id="lastName" class="form-control"><span class="help-block">Enter a valid last name</span>
+      </div>
+      <div class="form-group has-error">
+        <label for="address">Address</label>
+        <input type="text" name="addressLine1" maxlength="35" value="" id="address" class="form-control"><span class="help-block">Enter a valid address</span>
+      </div>
+      <div class="form-group has-error">
+        <label for="">City, State and ZIP</label>
+        <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" value="" class="form-control input-csz tt-hint" disabled="" autocomplete="off" spellcheck="false" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(238, 238, 238);"><input type="text" name="cityStateZIP" value="" id="cityStateZIP" class="form-control input-csz tt-input" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: nowrap; font-family: Lato, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset-cityStateZIP"></div></span></span><span class="help-block">Enter a valid City, State, ZIP</span>
+      </div>
+      <div class="form-group">
+        <label>What would you like to do?</label>
+        <label class="radio-inline control">
+          <input type="radio" name="memberType" value="seeker" checked="checked" class="member-type"><span class="control-indicator"></span>Pay for Care
+        </label>
+        <span class="show-mobile"> <br> </span>
+        <label class="radio-inline control">
+          <input type="radio" name="memberType" value="sitter" class="member-type"><span class="control-indicator"></span>Apply for care jobs
+        </label>
+      </div>
+      <div class="form-group has-error">
+        <label for="firstName">Email Address*</label>
+        <input type="text" name="email" value="" id="email" class="form-control"><span class="help-block">Please enter a valid email.</span>
+      </div>
+      <div class="form-group has-error">
+        <label for="lastName">Password*</label>
+        <input type="password" name="password" maxlength="35" value="" id="password" class="form-control" autocomplete="off"><span class="help-block">Enter a valid password</span>
+      </div>
+      <div class="form-group has-error">
+        <label for="phone">Primary Phone Number</label>
+        <input type="text" name="primaryPhone" maxlength="55" value="" id="phone" class="form-control"><span class="help-block">Enter a valid Primary Phone</span>
+      </div>
+      <div class="form-group sitter-field" style="display: none;">
+        <label for="sitterService">I am a</label>
+        <select name="sitterService" class="form-control"><option value="babysitter" selected="selected">Babysitter</option>
+          <option value="nanny">Nanny</option>
+          <option value="dayCare">Day Care Provider</option>
+          <option value="familyCare">Family Care Provider</option>
+          <option value="specialNeeds">Special Needs Provider</option>
+          <option value="tutoring">Tutor</option>
+          <option value="tutoring">Private Lesson Instructor</option>
+          <option value="seniorCare">Senior Care Provider</option>
+          <option value="petCare">Pet Care Provider</option>
+          <option value="housekeeping">Housekeeper</option>
+          <option value="careGigs">Errands &amp; Odd Jobs Provider</option></select>
+      </div>
+      <div class="form-group sitter-field" style="display: none;">
+        <h4>Membership Type*</h4>
+        <label class="radio-inline control">
+          <input type="radio" name="sitterType" value="INDIVIDUAL" checked="checked" id="imIndividual"><span class="control-indicator"></span>Individual
+        </label>
+        <span class="show-mobile"> <br> </span>
+        <label class="radio-inline control">
+          <input type="radio" name="sitterType" value="COMPANY" id="imCompany"><span class="control-indicator"></span>Company/Agency
+        </label>
+      </div>
+      <input type="hidden" name="attr-seeker.homepay.hyahs" value="HYAHS03">
+      <input type="hidden" name="howDidYouHearAboutUs" value="HWDHABTUS015">
+      <div class="form-group">
+        <label for="howDidYouHearAboutUs">How did you hear about HomePay?</label>
+        <select name="attr-member.homepay.hdyhau" class="form-control how-did-you-hear">
+          <option value="" selected="selected"></option>
+          <option value="HHDYHAU02">Friends or Family</option>
+          <option value="HHDYHAU01">Care.com</option>
+          <option value="HHDYHAU07">Press Coverage (News, Magazine, Blog)</option>
+          <option value="HHDYHAU04">My Employee</option>
+          <option value="HHDYHAU08">Search Engine (Google, Bing)</option>
+          <option value="HHDYHAU11">Parenting Group or Forum</option>
+          <option value="HHDYHAU10">Social Media (Facebook, LinkedIn)</option>
+          <option value="HHDYHAU03">Trusted Professional</option>
+          <option value="HHDYHAU09">Advertisement</option>
+        </select>
+      </div>
+      <div class="form-group how-did-you-hear-advert hdyhau-child" style="display: none;">
+        <label for="HDYHAUAdvertisement">Where did you see/hear it?</label>
+        <select name="HDYHAUAdvertisement" class="form-control"><option value="" selected="selected"></option>
+          <option value="HHDYHAUAD06">Print Ad</option>
+          <option value="HHDYHAUAD07">Banner Ad</option>
+          <option value="HHDYHAUAD01">Radio Ad</option>
+          <option value="HHDYHAUAD05">TV Ad</option>
+          <option value="HHDYHAUAD08">Other</option></select>
+      </div>
+      <div class="form-group how-did-you-hear-trusted-pro hdyhau-child" style="display: none;">
+        <label for="HDYHAUTrustedProfessional">Relationship</label>
+        <select name="HDYHAUTrustedProfessional" class="form-control"><option value="" selected="selected"></option>
+          <option value="HHDYHAUTP01">Placement Agency Counselor </option>
+          <option value="HHDYHAUTP03">Financial Advisor</option>
+          <option value="HHDYHAUTP04">Legal Advisor</option>
+          <option value="HHDYHAUTP02">Accountant</option>
+          <option value="HHDYHAUTP05">Trust Manager</option>
+          <option value="HHDYHAUTP06">Other</option></select>
+      </div>
+      <div class="form-group how-did-you-hear-referred-by hdyhau-child" style="display: none;">
+        <label class="referred-by-label">Who referred you?</label>
+        <input type="text" name="attr-member.homepay.hdyhau.name" maxlength="50" value="" class="form-control">
+      </div>
+      <p class="disclaimer" id="seekerDisclaimer"> By clicking "Create Account", you agree to the <a class="link-green" href="javascript:;" onclick="window.open('//www.myhomepay.com/Breedlove/TermsAndConditions.aspx','mywindow','menubar=1, scrollbars=yes, width=600,height=450');return false;">Terms of Use</a> and <a class="link-green" href="javascript:;" onclick="window.open('//www.myhomepay.com/Breedlove/PrivacyPolicy.aspx','mywindow','menubar=1, scrollbars=yes, width=600,height=450');return false;">Privacy Policy</a> of Breedlove &amp; Associates, LLC, a Care.com subsidiary.</p>
+      <input type="hidden" name="createProspect" value="true"> <input type="hidden" name="attr-seeker.homepayEnrollment.testCell" value="homepay-test">
+      <button type="submit" class="btn btn-large btn-red">
+        Create Account
+        <span class="btn-arrow"></span>
+      </button>
+      <input type="hidden" name="validationReturnURL" value="/homepay">
+      <input type="hidden" name="vhpShortForm" value="true">
+    </form>
+  </div>
+
+</div>
+</div>

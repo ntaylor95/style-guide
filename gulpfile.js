@@ -3,6 +3,7 @@ var concat = require('gulp-concat');
 var less = require('gulp-less');
 var fs = require('fs');
 var watchLess = require('gulp-watch-less');
+var resources = require('gulp-resources');
 
 gulp.task('less', function() {
   if (fs.existsSync('./app/assets/css/styles.less')) {

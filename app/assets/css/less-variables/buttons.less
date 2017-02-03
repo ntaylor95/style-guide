@@ -1,0 +1,83 @@
+@import "colors";
+@import "fonts";
+
+.btn {
+  &:focus, &:hover {
+    text-decoration:none;
+    outline: none;
+  }
+}
+
+.btn-red {
+  background-color: @tomato-cta-red;
+  border: 1px solid @tomato-cta-red;
+  color: @background-color;
+  font-family: @main-font-family;
+  .btn;
+  &:focus, &:hover {
+    color: @background-color;
+  }
+}
+
+.btn-large {
+  border-radius: 100px;
+  font-size: 18px;
+  line-height: 29px;
+  margin-bottom: 50px;
+  padding: 8px 0;
+  text-align: center;
+  width: 100%;
+  .btn;
+}
+
+.btn-small {
+  height: 40px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  .btn;
+}
+
+.btn-white {
+  border: 1px solid @homepay-green;
+  border-radius: 40px;
+  color: @homepay-green;
+  font-family: @main-font-family;
+  font-size: 20px;
+  line-height: 42px;
+  padding: 5px 20px;
+  text-align: center;
+  background-color: @background-color;
+  .btn;
+  &:focus, &:hover {
+    color: @homepay-green;
+  }
+}
+
+.link-white {
+  border: 1px solid @homepay-green;
+  border-radius: 16px;
+  color: @homepay-green;
+  font-family: @main-font-family;
+  font-size: 20px;
+  line-height: 42px;
+  padding: 5px 20px;
+  text-align: center;
+  &:focus, &:hover {
+    text-decoration:none;
+    color: @homepay-green;
+    font-family: @main-font-family;
+    outline: none;
+  }
+}
+
+.link-green {
+  color: @homepay-green;
+  .body-text;
+  &:focus, &:hover {
+    text-decoration: none;
+    color: @homepay-green;
+    outline: none;
+  }
+}
